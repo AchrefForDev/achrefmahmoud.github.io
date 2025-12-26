@@ -17,11 +17,11 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <title>Achref Mahmoud | Ingénieur Informatique Java & Full Stack</title>
+        <title>Achref Mahmoud | Ingénieur Informatique</title>
 
         <meta name="description" content="Achref Mahmoud, ingénieur informatique spécialisé en Java, Spring Boot et Angular. Développeur full stack avec plus de 5 ans d’expérience. Portfolio, projets et contact.">
         <meta name="author" content="Achref Mahmoud">
-        <meta name="keywords" content="Achref Mahmoud, ingénieur informatique, développeur Java, developer, Spring Boot, Angular, Tunisie">
+        <meta name="keywords" content="Achref Mahmoud, ingénieur informatique, software engineer, développeur Java, developer, Spring Boot, Angular, Tunisie">
 
         <!-- Mobile Specific Metas
         ================================================== -->
@@ -70,15 +70,27 @@
 
                     </div><!-- /.navbar-header -->
 
+                    <div class="lang-switcher">
+                        <button id="lang-fr" class="lang-btn active">
+                            <img src="assets/img/fr.png" alt="FR"> FR
+                        </button>
+                        <button id="lang-en" class="lang-btn">
+                            <img src="assets/img/en.png" alt="EN"> EN
+                        </button>
+                    </div>
+
+
+
+
                     <div class="main-menu" id="portfolio-perfect-collapse">
 
                         <ul class="nav navbar-nav navbar-right">
 
-                            <li class="page-scroll"><a href="#hero">Accueil</a></li>
-                            <li class="page-scroll"><a href="#about">À propos</a></li>
-                            <li class="page-scroll"><a href="#service">Compétences</a></li>
-                            <li class="page-scroll"><a href="#portfolio">Projets</a></li>
-                            <li class="page-scroll"><a href="#contact">Contact</a></li>
+                            <li class="page-scroll"><a href="#hero" data-i18n="nav.home">Accueil</a></li>
+                            <li class="page-scroll"><a href="#about" data-i18n="nav.about">À propos</a></li>
+                            <li class="page-scroll"><a href="#service" data-i18n="nav.skills">Compétences</a></li>
+                            <li class="page-scroll"><a href="#portfolio" data-i18n="nav.projects">Projets</a></li>
+                            <li class="page-scroll"><a href="#contact" data-i18n="nav.contact">Contact</a></li>
                             
                         </ul><!-- /.navbar-nav -->
 
@@ -95,10 +107,10 @@
                     <div class="col-md-6">
                         <h1>Achref Mahmoud</h1>
                         <div class="page-scroll">
-                            <p class="job-title">Ingénieur Informatique & Développeur Full Stack</p>
-                            <a href="#contact" class="btn btn-fill ">Me contacter</a>
+                            <p class="job-title" data-i18n="hero.title">Ingénieur Informatique & Développeur Full Stack</p>
+                            <a href="#contact" class="btn btn-fill " data-i18n="hero.contact">Me contacter</a>
                             <div class="clearfix visible-xxs"></div>
-                            <a href="#portfolio" class="btn btn-border">Voir mes projets</a>
+                            <a href="#portfolio" class="btn btn-border" data-i18n="hero.projects">Voir mes projets</a>
                         </div>
                     </div>
                 
@@ -116,16 +128,17 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 col-md-offset-3">
-                            <h2>À propos de moi</h2>
+                            <h2 data-i18n="about.title">À propos de moi</h2>
                             <img src="assets/img/lines.svg" class="img-lines" alt="lines">
-                            <p>
-                                Bonjour ! Je suis Achref Mahmoud, ingénieur informatique Full Stack passionné par le développement de solutions web performantes et fiables. 
-                                Je maîtrise Java (Spring Boot) et Angular, et j’ai participé à des projets dans les secteurs financiers, bancaires, industriels et commerciaux, en concevant des applications robustes et évolutives adaptées aux besoins des utilisateurs.
-                            </p>
+                            <p data-i18n="about.text">
+                                Bonjour ! Je suis Achref Mahmoud, ingénieur informatique Full Stack passionné par la conception et le développement de solutions web performantes et fiables. 
+                                J’ai participé à plusieurs projets dans des contextes variés (finance, banque, industrie et services), en contribuant à la création d’applications robustes, évolutives et orientées utilisateur.
+                            </p data-i18n="about.text">
                             <a href="https://www.linkedin.com/in/achref-mahmoud/" 
                                class="btn btn-fill" 
                                target="_blank"
-                               rel="noopener noreferrer">
+                               rel="noopener noreferrer"
+                               data-i18n="about.linkedin">
                                Consulter mon parcours sur LinkedIn
                             </a>
 
@@ -137,7 +150,7 @@
             <section class="site-section section-skills">
                 <div class="container">
                     <div class="text-center">
-                        <h3>Mes compétences</h3>
+                        <h3 data-i18n="skills.title"></h3>
                         <img src="assets/img/lines.svg" class="img-lines" alt="lines">
                     </div>
 
@@ -196,6 +209,11 @@
                             <img src="assets/img/skills/postgre.png" alt="Angular">
                             <span>Postgre</span>
                         </div>
+
+                        <div class="skill-logo">
+                            <img src="assets/img/skills/git.png" alt="Angular">
+                            <span>GitLab / GitHub</span>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -205,21 +223,21 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h3>Ce que je fais</h3>
+                            <h3 data-i18n="services.title">Ce que je fais</h3>
                             <img src="assets/img/lines.svg" class="img-lines" alt="lines">
                         </div>
                         <div class="col-sm-6">
                             <div class="service">
                                 <img src="assets/img/back-end.svg" alt="Back End Developer">
-                                <h4>Administrateur SalesForce</h4>
-                                <p>Je garantis que la plateforme Salesforce est optimisée pour répondre aux besoins de l’organisation. Je veille à son bon fonctionnement, à la configuration des modules selon les processus métiers et à l’accompagnement des utilisateurs pour une adoption efficace.</p>
+                                <h4 data-i18n="services.sf.title">Administrateur SalesForce</h4>
+                                <p data-i18n="services.sf.text">Je garantis que la plateforme Salesforce est optimisée pour répondre aux besoins de l’organisation. Je veille à son bon fonctionnement, à la configuration des modules selon les processus métiers et à l’accompagnement des utilisateurs pour une adoption efficace.</p>
                             </div><!-- /.service -->
                         </div>
                         <div class="col-sm-6">
                             <div class="service">
                                 <img src="assets/img/front-end.svg" alt="Front End Developer">
-                                <h4>Développeur Web Fullstack</h4>
-                                <p>Je conçois et développe des applications web complètes, interactives et performantes. J’interviens sur le backend et le frontend en utilisant des technologies modernes comme Java Spring Boot, Angular, Laravel, WordPress, Drupal ou Vue.js, en veillant à la maintenabilité et à l’efficacité des solutions.</p>
+                                <h4 data-i18n="services.fullstack.title">Développeur Web Fullstack</h4>
+                                <p data-i18n="services.fullstack.text">Je conçois et développe des applications web complètes, interactives et performantes. J’interviens sur le backend et le frontend en utilisant des technologies modernes comme Java Spring Boot, Angular, Laravel, WordPress, Drupal ou Vue.js, en veillant à la maintenabilité et à l’efficacité des solutions.</p>
                             </div><!-- /.service -->
                         </div>
                     </div>
@@ -228,15 +246,15 @@
                         <div class="col-sm-6">
                             <div class="service">
                                 <img src="assets/img/front-end.svg" alt="Back End Developer">
-                                <h4>Concepteur Web</h4>
-                                <p>Je combine créativité et compétences techniques pour créer des interfaces web attrayantes et ergonomiques, centrées sur l’expérience utilisateur, tout en respectant les objectifs fonctionnels et stratégiques de l’entreprise.</p>
+                                <h4 data-i18n="services.webdesign.title">Concepteur Web</h4>
+                                <p data-i18n="services.webdesign.text">Je combine créativité et compétences techniques pour créer des interfaces web attrayantes et ergonomiques, centrées sur l’expérience utilisateur, tout en respectant les objectifs fonctionnels et stratégiques de l’entreprise.</p>
                             </div><!-- /.service -->
                         </div>
                         <div class="col-sm-6">
                             <div class="service">
                                 <img src="assets/img/consultancy.svg" alt="Front End Developer">
-                                <h4>Testeur Fonctionnel</h4>
-                                <p>Je contribue à la qualité des logiciels en concevant et exécutant des scénarios de test, en identifiant et documentant les anomalies, et en collaborant étroitement avec les développeurs pour assurer la fiabilité et la performance des applications.</p>
+                                <h4 data-i18n="services.testing.title">Testeur Fonctionnel</h4>
+                                <p data-i18n="services.testing.text">Je contribue à la qualité des logiciels en concevant et exécutant des scénarios de test, en identifiant et documentant les anomalies, et en collaborant étroitement avec les développeurs pour assurer la fiabilité et la performance des applications.</p>
                             </div><!-- /.service -->
                         </div>
                     </div>
@@ -247,7 +265,7 @@
         <section id="portfolio" class="site-section section-portfolio">
             <div class="container">
                 <div class="text-center">
-                    <h3>Mes Réalisations Récentes</h3>
+                    <h3 data-i18n="portfolio.title">Mes Réalisations Récentes</h3>
                     <img src="assets/img/lines.svg" class="img-lines" alt="lines">
                 </div>
 
@@ -392,15 +410,15 @@
                 <div class="row">
                     <div class="col-sm-4 col-xs-12">
                         <p class="counter start" data-to="5" data-speed="4000">0</p>
-                        <h4>Années d'Expérience</h4>
+                        <h4 data-i18n="counters.experience"></h4>
                     </div>
                     <div class="col-sm-4 col-xs-12">
                         <p class="counter start" data-to="15" data-speed="2000">0</p>       
-                        <h4>Projects Delivered</h4>      
+                        <h4 data-i18n="counters.projects"></h4>      
                     </div>
                     <div class="col-sm-4 col-xs-12">
                         <p id="infinity" class="counter" data-from="0" data-to="1" data-speed="1000">0</p>
-                        <h4>Secondes passées ici !!<br>Qu'attendez-vous?</h4>
+                        <h4 data-i18n="counters.seconds"></h4>
                     </div>
                 </div>
             </div>
@@ -409,27 +427,27 @@
         <section id="contact" class="site-section section-form text-center">
             <div class="container">
 
-                <h3>Me contacter</h3>
+                <h3 data-i18n="contact.title"></h3>
                 <img src="assets/img/lines.svg" class="img-lines" alt="lines">
                 <form id="contact-form" action="https://formspree.io/f/xjgbbqgn" method="POST">
                     <div class="row">
                         <div class="col-sm-4">
-                            <input type="text" name="name" class="form-control mt-x-0" placeholder="Nom" required>
+                            <input type="text" name="name" class="form-control mt-x-0" placeholder="" data-i18n-placeholder="contact.name" required>
                         </div>
                         <div class="col-sm-4">
-                            <input type="email" name="email" class="form-control" placeholder="Email" required>   
+                            <input type="email" name="email" class="form-control" placeholder="" data-i18n-placeholder="contact.email" required>   
                         </div>
                         <div class="col-sm-4">
-                            <input type="numbe" name="phone" class="form-control" placeholder="Numéro de téléphone" required>   
+                            <input type="numbe" name="phone" class="form-control" placeholder="" data-i18n-placeholder="contact.phone" required>   
                         </div><br><br><br>
                         <div class="col-sm-12">
-                            <input type="text" name="objet" class="form-control" placeholder="Objet" required>   
+                            <input type="text" name="objet" class="form-control" placeholder="" data-i18n-placeholder="contact.subject" required>   
                         </div><br>
                         <div class="col-sm-12">
-                            <textarea name="message" id="mesaage" class="form-control" placeholder="Message" required></textarea>
+                            <textarea name="message" id="mesaage" class="form-control" placeholder="" data-i18n-placeholder="contact.message" required></textarea>
                         </div>
                     </div>
-                    <button href="#" class="btn btn-border" type="submit">Me Contacter <span class="glyphicon glyphicon-send"></span></button>
+                    <button href="#" class="btn btn-border" type="submit" data-i18n="contact.button"><span class="glyphicon glyphicon-send"></span></button>
                     <p id="form-status" style="margin-top:15px; display:none;"></p>
                 </form><br><br>
                 <img src="assets/img/lines.svg" class="img-lines" alt="lines">
@@ -439,22 +457,24 @@
     </main><!-- /#main -->
 
     <footer id="colophon" class="site-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4 col-xs-12">
-                    <a class="icon email-bg" href="mailto:contact@achrefmahmoud.com"><i class="fa fa-envelope"></i></a>                    
-                    <a class="icon gplus-bg" href="https://www.linkedin.com/in/achref-mahmoud/"><i class="icon-linkedin"></i></a>
-                    <a class="icon facebook-bg" href="https://www.facebook.com/profile.php?id=100089081120750"><i class="icon-facebook"></i></a>
-                </div>
-                <div class="col-sm-4 col-sm-offset-0 col-xs-6 col-xs-offset-3"><p class="copyright">2025. All rights reserved.</p></div>
-                <div class="col-sm-4 col-xs-3">
-                    <div class="text-right page-scroll">
-                        <a class="icon icon-up-bg" href="#hero"><i class="icon-up"></i></a>
-                    </div>
-                </div>
+    <div class="container">
+        <div class="row justify-content-center align-items-center text-center">
+            <div class="col-12 d-flex justify-content-center align-items-center" style="gap: 10px;">
+                <!-- Email & réseaux sociaux -->
+                <a class="icon email-bg" href="mailto:contact@achrefmahmoud.com"><i class="fa fa-envelope"></i></a>                    
+                <a class="icon gplus-bg" href="https://www.linkedin.com/in/achref-mahmoud/"><i class="icon-linkedin"></i></a>
+                <a class="icon facebook-bg" href="https://www.facebook.com/profile.php?id=100089081120750"><i class="icon-facebook"></i></a>
+
+                <!-- Petit espace avant le copyright -->
+                <span style="width: 15px;"></span>
+
+                <!-- Copyright -->
+                <p class="copyright mb-0" data-i18n="footer.copyright">2025. Tous droits réservés.</p>
             </div>
         </div>
-    </footer><!-- /#footer -->
+    </div>
+</footer>
+<!-- /#footer -->
 
     <!-- Modals -->
     <div id="portfolioItem7" class="modal fade" role="dialog">
@@ -466,10 +486,8 @@
           </div>
           <div class="modal-body">
             <h4 class="modal-title">GenDev</h4>
-            <h5 class="modal-title">Application de gestion pour centre de formation</h5><br>
-            <p>Conception et développement d’une application dédiée à la gestion d’un centre de formation pour enfants et élèves.
-            Mise en place des fonctionnalités de gestion des apprenants, des formations, des inscriptions et du suivi pédagogique, afin d’optimiser l’organisation et les processus administratifs du centre.
-            </p>
+            <h5 class="modal-title" data-i18n="modal.gendev.subtitle"></h5><br>
+            <p data-i18n="modal.gendev.description"></p>
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
@@ -483,10 +501,8 @@
           </div>
           <div class="modal-body">
             <h4 class="modal-title">Consult App</h4>
-            <h5 class="modal-title">Plateforme de gestion et de réservation de consultations d’experts en ligne</h5><br>
-            <p>Conception et développement d’une application permettant la mise en relation entre des experts et des clients pour la réservation de consultations en ligne.
-            Mise en place de la gestion des utilisateurs, des disponibilités, des rendez-vous et du suivi des consultations, avec une architecture orientée performance et évolutivité.
-            </p>
+            <h5 class="modal-title" data-i18n="modal.consult.subtitle"></h5><br>
+            <p data-i18n="modal.consult.description"></p>
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
@@ -500,10 +516,8 @@
           </div>
           <div class="modal-body">
             <h4 class="modal-title">Para Hajji</h4>
-            <h5 class="modal-title">Site web vitrine et e-commerce pour parapharmacie</h5><br>
-            <p>Développement d’un site web destiné à améliorer la présence digitale d’une parapharmacie.
-            Création d’une expérience utilisateur fluide, facilitant la consultation des produits, la recherche d’informations et la mise en valeur des offres.
-            </p>
+            <h5 class="modal-title" data-i18n="modal.parahajji.subtitle"></h5><br>
+            <p data-i18n="modal.parahajji.description"></p>
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
@@ -518,13 +532,11 @@
           </div>
           <div class="modal-body">
             <h4 class="modal-title">Saby Tours</h4>
-            <h5 class="modal-title">Plateforme de réservation pour une agence de voyage</h5><br>
-            <p>Réalisation complète d’une plateforme web de réservation de voyages pour l’agence Saby Tours.
-            Conception et développement du backend en Spring Boot et du frontend en Angular, avec gestion des offres touristiques, réservations, paiements et comptes clients.
-            Mise en place d’une interface moderne et responsive offrant une expérience fluide aux utilisateurs et une administration simplifiée pour la gestion des séjours.</p>
+            <h5 class="modal-title" data-i18n="modal.sabytours.subtitle"></h5><br>
+            <p data-i18n="modal.sabytours.description"></p>
           </div>
           <div class="modal-footer">
-            <a href="https://www.sabytours.tn/" class="btn btn-fill" target="_blank">Visit Page</a>
+            <a href="https://www.sabytours.tn/" class="btn btn-fill" target="_blank" data-i18n="modal.sabytours.visit"></a>
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
@@ -539,10 +551,8 @@
           </div>
           <div class="modal-body">
             <h4 class="modal-title">Emuse</h4>
-            <h5 class="modal-title">Plateforme de Surveillance de la qualité de l’air</h5><br>
-            <p>Projet complet de conception et développement d’une application web et mobile pour la surveillance en temps réel de la qualité de l’air.
-            Développement du backend avec Spring Boot, du frontend avec Angular, et d’une application mobile en Flutter pour la consultation des données de capteurs IoT.
-            Mise en place de l’authentification, du suivi des mesures et de la gestion des alertes environnementales.</p>
+            <h5 class="modal-title" data-i18n="modal.emuse.subtitle"></h5><br>
+            <p data-i18n="modal.emuse.description"></p>
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
@@ -556,10 +566,9 @@
             <img class="img-res" src="assets/img/portfolio-3.jpg" alt="">
           </div>
           <div class="modal-body">
-            <h4 class="modal-title">UpdaterTheria</h4>
-            <h5 class="modal-title">Application de gestion interne des base de données</h5><br>
-            <p>développement et à la maintenance d’outils internes destinés à l’automatisation de tâches et la mise à jour de données entre serveurs.
-            Travail avec Spring Boot intégrés dans des environnements existants, avec suivi de tickets techniques et corrections de bugs.</p>
+            <h4 class="modal-title">TheriaUpdater</h4>
+            <h5 class="modal-title" data-i18n="modal.updatertheria.subtitle"></h5><br>
+            <p data-i18n="modal.updatertheria.description"></p>
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
@@ -574,10 +583,8 @@
           </div>
           <div class="modal-body">
             <h4 class="modal-title">Invent</h4>
-            <h5 class="modal-title">Plateforme de gestion d’inventaires</h5><br>
-            <p>Développement et maintenance d’une application web de gestion d’inventaires utilisée en production.
-            Conception du backend en Java Spring Boot (API REST sécurisée) et intégration avec une base de données MySQL.
-            Participation à l’optimisation des performances et au déploiement sur les serveurs de recette et de production.</p>
+            <h5 class="modal-title" data-i18n="modal.invent.subtitle"></h5><br>
+            <p data-i18n="modal.invent.description"></p>
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
@@ -592,10 +599,8 @@
           </div>
           <div class="modal-body">
             <h4 class="modal-title">AllianceNic</h4>
-            <h5 class="modal-title">Plateforme d’intermédiation entre registres et clients</h5><br>
-            <p>Responsable d’application pour une plateforme de gestion de noms de domaine, reliant les registres DNS aux sites clients.
-            Gestion des serveurs de recette et production, suivi des déploiements et traitement des incidents techniques.
-            Contribution à la stabilité et à la performance du système en environnement de production.</p>
+            <h5 class="modal-title" data-i18n="modal.alliancenic.subtitle"></h5><br>
+            <p data-i18n="modal.alliancenic.description"></p>
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
@@ -610,10 +615,8 @@
           </div>
           <div class="modal-body">
             <h4 class="modal-title">Recouvrement</h4>
-            <h5 class="modal-title">Gestion de processus de recouvrement des crédit bancaire</h5><br>
-            <p>Développement full stack d’un logiciel financier dédié aux banques pour la gestion du recouvrement.
-            Implémentation du backend en Spring Boot, du frontend en Angular, et des requêtes Oracle PL/SQL.
-            Travail dans une architecture microservices favorisant la modularité et la scalabilité du système.</p>
+            <h5 class="modal-title" data-i18n="modal.recouvrement.subtitle"></h5><br>
+            <p data-i18n="modal.recouvrement.description"></p>
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
@@ -636,14 +639,33 @@
       const form = document.getElementById('contact-form');
       const status = document.getElementById('form-status');
 
+      // Définir les messages selon la langue
+      const formMessages = {
+        fr: {
+          sending: "Envoi du message...",
+          success: "✅ Message envoyé avec succès. Merci !",
+          error: "❌ Une erreur est survenue. Veuillez réessayer.",
+          network: "❌ Erreur réseau. Réessayez plus tard."
+        },
+        en: {
+          sending: "Sending message...",
+          success: "✅ Message sent successfully. Thank you!",
+          error: "❌ An error occurred. Please try again.",
+          network: "❌ Network error. Please try again later."
+        }
+      };
+
       form.addEventListener('submit', async function (e) {
         e.preventDefault(); // empêche la redirection
 
         const data = new FormData(form);
 
+        // Récupérer la langue actuelle
+        const lang = localStorage.getItem("lang") || "fr";
+
         status.style.display = "block";
         status.style.color = "#333";
-        status.textContent = "Envoi du message...";
+        status.textContent = formMessages[lang].sending;
 
         try {
           const response = await fetch(form.action, {
@@ -656,18 +678,218 @@
 
           if (response.ok) {
             status.style.color = "green";
-            status.textContent = "✅ Message envoyé avec succès. Merci !";
+            status.textContent = formMessages[lang].success;
             form.reset();
           } else {
             status.style.color = "red";
-            status.textContent = "❌ Une erreur est survenue. Veuillez réessayer.";
+            status.textContent = formMessages[lang].error;
           }
         } catch (error) {
           status.style.color = "red";
-          status.textContent = "❌ Erreur réseau. Réessayez plus tard.";
+          status.textContent = formMessages[lang].network;
         }
       });
     </script>
+
+
+    <script>
+        const translations = {
+          fr: {
+            "meta.title": "Achref Mahmoud | Ingénieur Informatique",
+            "meta.description": "Achref Mahmoud, ingénieur informatique spécialisé en Java, Spring Boot et Angular. Développeur full stack avec plus de 5 ans d’expérience. Portfolio, projets et contact.",
+
+            "nav.home": "Accueil",
+            "nav.about": "À propos",
+            "nav.skills": "Compétences",
+            "nav.projects": "Projets",
+            "nav.contact": "Contact",
+
+            "hero.title": "Ingénieur Informatique & Développeur Full Stack",
+            "hero.contact": "Me contacter",
+            "hero.projects": "Voir mes projets",
+
+            "about.title": "À propos de moi",
+            "about.text": "Bonjour ! Je suis Achref Mahmoud, ingénieur informatique Full Stack passionné par la conception et le développement de solutions web performantes et fiables. J’ai participé à plusieurs projets dans des contextes variés (finance, banque, industrie et services), en contribuant à la création d’applications robustes, évolutives et orientées utilisateur.",
+            "about.linkedin": "Consulter mon parcours sur LinkedIn",
+
+            "skills.title": "Mes compétences",
+
+            "services.title": "Ce que je fais",
+            "services.sf.title": "Administrateur Salesforce",
+            "services.sf.text": "Je veille à ce que la plateforme Salesforce soit correctement configurée et optimisée pour répondre aux besoins de l’organisation, en accompagnant les utilisateurs et en alignant les fonctionnalités avec les processus métiers.",
+            "services.fullstack.title": "Développeur Web Full Stack",
+            "services.fullstack.text": "Je conçois et développe des applications web complètes, performantes et maintenables, en intervenant aussi bien sur le backend que sur le frontend, avec une attention particulière portée à la qualité et à l’expérience utilisateur.",
+            "services.webdesign.title": "Concepteur Web",
+            "services.webdesign.text": "Je crée des interfaces web modernes, ergonomiques et centrées sur l’utilisateur, en combinant créativité, bonnes pratiques UX/UI et objectifs fonctionnels.",
+            "services.testing.title": "Testeur Fonctionnel",
+            "services.testing.text": "Je contribue à la qualité des applications en concevant et exécutant des scénarios de tests fonctionnels, en identifiant les anomalies et en collaborant étroitement avec les équipes de développement.",
+
+            "portfolio.title": "Mes Réalisations Récentes",
+
+            "counters.experience": "Années d'Expérience",
+            "counters.projects": "Projets livrés",
+            "counters.seconds": "Secondes passées ici !!<br>Qu'attendez-vous?",
+
+            "contact.title": "Me contacter",
+            "contact.name": "Nom",
+            "contact.email": "Email",
+            "contact.phone": "Numéro de téléphone",
+            "contact.subject": "Objet",
+            "contact.message": "Message",
+            "contact.button": "Me Contacter",
+
+            "footer.copyright": "2025. Tous droits réservés.",
+
+            // les modales (details des projets
+            "modal.gendev.subtitle": "Application de gestion pour centre de formation",
+            "modal.gendev.description": "Conception et développement d’une application dédiée à la gestion d’un centre de formation pour élèves. Mise en place des fonctionnalités de gestion des apprenants, des formations, des inscriptions et du suivi pédagogique.",
+            "modal.consult.subtitle": "Plateforme de gestion et de réservation de consultations d’experts en ligne",
+            "modal.consult.description": "Conception et développement d’une application permettant la mise en relation entre des experts et des clients pour la réservation de consultations en ligne. Mise en place de la gestion des utilisateurs, des disponibilités, des rendez-vous et du suivi des consultations, avec une architecture orientée performance et évolutivité.",
+            "modal.parahajji.subtitle": "Site web vitrine et e-commerce pour parapharmacie",
+            "modal.parahajji.description": "Développement d’un site web destiné à améliorer la présence digitale d’une para-pharmacie. Création d’une expérience utilisateur fluide, facilitant la consultation des produits, la recherche d’informations et la mise en valeur des offres.",
+            "modal.sabytours.subtitle": "Plateforme de réservation pour une agence de voyage",
+            "modal.sabytours.description": "Réalisation complète d’une plateforme web de réservation de voyages pour l’agence Saby Tours. Conception et développement du backend en Spring Boot et du frontend en Angular, avec gestion des offres touristiques, réservations, paiements et comptes clients. Mise en place d’une interface moderne et responsive offrant une expérience fluide aux utilisateurs et une administration simplifiée pour la gestion des séjours.",
+            "modal.sabytours.visit": "Visiter le site",
+            "modal.emuse.subtitle": "Plateforme de surveillance de la qualité de l’air",
+            "modal.emuse.description": "Développement d’une application web / mobile pour la surveillance en temps réel de la qualité de l’air. Développement du backend avec Spring Boot et du frontend avec Angular. Mise en place de l’authentification, du suivi des mesures et de la gestion des alertes environnementales.",
+            "modal.updatertheria.subtitle": "Application de gestion interne des bases de données",
+            "modal.updatertheria.description": "Développement et maintenance d’outils internes destinés à l’automatisation de tâches et à la mise à jour de données entre serveurs. Travail avec Spring et AngularJs intégré dans des environnements existants, avec suivi de tickets techniques et correction de bugs.",
+            "modal.invent.description": "Développement et maintenance d’une application web de gestion d’inventaires utilisée en production. Conception du backend en Java Spring Boot (API REST sécurisée) et intégration avec une base de données MySQL. Participation à l’optimisation des performances et au déploiement sur les serveurs de recette et de production.",
+            "modal.alliancenic.subtitle": "Plateforme d’intermédiation entre registres et clients",
+            "modal.alliancenic.description": "Responsable d’application pour une plateforme de gestion de noms de domaine, reliant les registres DNS aux sites clients. Gestion des serveurs de recette et production, suivi des déploiements et traitement des incidents techniques. Contribution à la stabilité et à la performance du système en environnement de production.",
+            "modal.recouvrement.subtitle": "Gestion de processus de recouvrement des crédits bancaires",
+            "modal.recouvrement.description": "Développement full stack d’un logiciel financier dédié aux banques pour la gestion du recouvrement. Implémentation du backend en Spring Boot, du frontend en Angular, et des requêtes Oracle PL/SQL. Travail dans une architecture microservices favorisant la modularité et la scalabilité du système."
+          },
+
+          en: {
+            "meta.title": "Achref Mahmoud | Software Engineer",
+            "meta.description": "Achref Mahmoud, software engineer specialized in Java, Spring Boot and Angular. Full stack developer with over 5 years of experience. Portfolio, projects and contact.",
+
+            "nav.home": "Home",
+            "nav.about": "About",
+            "nav.skills": "Skills",
+            "nav.projects": "Projects",
+            "nav.contact": "Contact",
+            "hero.projects": "View my projects",
+
+            "hero.title": "Software Engineer & Full Stack Developer",
+            "hero.contact": "Contact me",
+
+            "about.title": "About me",
+            "about.text": "Hello! I'm Achref Mahmoud, a Full Stack Software Engineer passionate about designing and building reliable, high-performance web solutions. I have worked on various projects across different domains, including finance, banking, industry, and services, contributing to the development of robust, scalable, and user-focused applications.",
+            "about.linkedin": "View my LinkedIn profile",
+
+            "skills.title": "My skills",
+
+            "services.title": "What I do",
+
+            "services.sf.title": "Salesforce Administrator",
+            "services.sf.text": "I ensure that the Salesforce platform is properly configured and optimized to meet business needs, supporting users and aligning features with organizational processes.",
+
+            "services.fullstack.title": "Full Stack Web Developer",
+            "services.fullstack.text": "I design and develop complete, high-performance, and maintainable web applications, working across both backend and frontend layers with a strong focus on quality and user experience.",
+
+            "services.webdesign.title": "Web Designer",
+            "services.webdesign.text": "I design modern, user-friendly web interfaces by combining creativity, UX/UI best practices, and functional objectives.",
+
+            "services.testing.title": "Functional Tester",
+            "services.testing.text": "I contribute to application quality by designing and executing functional test scenarios, identifying issues, and working closely with development teams.",
+
+            "portfolio.title": "My Recent Work",
+
+            "counters.experience": "Years of Experience",
+            "counters.projects": "Projects Delivered",
+            "counters.seconds": "Seconds spent here!!<br>What are you waiting for?",
+
+            "contact.title": "Contact Me",
+            "contact.name": "Name",
+            "contact.email": "Email",
+            "contact.phone": "Phone Number",
+            "contact.subject": "Subject",
+            "contact.message": "Message",
+            "contact.button": "Send Message",
+
+            "footer.copyright": "2025. All rights reserved.",
+
+            // les modales (details des projets:
+            "modal.gendev.subtitle": "Management application for training centers",
+            "modal.gendev.description": "Design and development of an application dedicated to managing a training center for students. Implementation of learner management, training programs, registrations, and educational follow-up.",
+            "modal.consult.subtitle": "Online expert consultation management and booking platform",
+            "modal.consult.description": "Design and development of an application that connects experts with clients for booking online consultations. Implementation of user management, availability scheduling, appointments, and consultation follow-up, using a performance-oriented and scalable architecture.",
+            "modal.parahajji.subtitle": "Showcase and e-commerce website for a pharmacy",
+            "modal.parahajji.description": "Development of a website designed to improve the digital presence of a para-pharmacy. Creation of a smooth user experience that facilitates product browsing, information searching, and promotion of offers.",
+            "modal.sabytours.subtitle": "Booking platform for a travel agency",
+            "modal.sabytours.description": "Complete development of a web-based travel booking platform for Saby Tours. Backend developed with Spring Boot and frontend with Angular, including management of travel offers, bookings, payments, and customer accounts. Implementation of a modern, responsive interface providing a smooth user experience and simplified administration for managing trips.",
+            "modal.sabytours.visit": "Visit website",
+            "modal.emuse.subtitle": "Air Quality Monitoring Platform",
+            "modal.emuse.description": "Development of a web / mobile application for real-time air quality monitoring. Backend developed with Spring Boot and frontend with Angular. Implementation of authentication, measurement tracking, and environmental alert management.",
+            "modal.updatertheria.subtitle": "Internal Database Management Application",
+            "modal.updatertheria.description": "Development and maintenance of internal tools designed to automate tasks and synchronize data between servers. Work with Spring and AngularJs integrated into existing environments, including technical ticket tracking and bug fixing.",
+            "modal.invent.subtitle": "Inventory Management Platform",
+            "modal.invent.description": "Development and maintenance of a production-ready inventory management web application. Backend design using Java Spring Boot (secured REST API) with MySQL database integration. Contribution to performance optimization and deployment on staging and production servers.",
+            "modal.alliancenic.subtitle": "Intermediation Platform Between Registries and Clients",
+            "modal.alliancenic.description": "Application owner for a domain name management platform connecting DNS registries with client websites. Management of staging and production servers, deployment monitoring, and technical incident handling. Contribution to system stability and performance in production environments.",
+            "modal.recouvrement.subtitle": "Banking Debt Collection Process Management",
+            "modal.recouvrement.description": "Full-stack development of a financial software solution dedicated to banks for debt collection management. Backend implementation with Spring Boot, frontend with Angular, and Oracle PL/SQL queries. Work within a microservices architecture ensuring modularity and scalability."         
+          }
+        };
+
+        function setLanguage(lang) {
+            localStorage.setItem("lang", lang);
+
+            // Mettre à jour les textes
+            document.querySelectorAll("[data-i18n]").forEach(el => {
+                const key = el.getAttribute("data-i18n");
+                if (translations[lang][key]) {
+                    el.innerHTML = translations[lang][key];
+                }
+            });
+
+            // Mettre à jour les placeholders
+            document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+                const key = el.getAttribute("data-i18n-placeholder");
+                if (translations[lang][key]) {
+                    el.placeholder = translations[lang][key];
+                }
+            });
+
+            // Activer la langue sélectionnée
+            document.getElementById("lang-fr").classList.toggle("active", lang === "fr");
+            document.getElementById("lang-en").classList.toggle("active", lang === "en");
+
+            // Mettre à jour l'attribut lang du document
+            document.documentElement.lang = lang;
+        }
+
+        // --- Nouvelle fonction SEO (title + meta description) ---
+        function updateSeo(lang) {
+            if (translations[lang]["meta.title"]) {
+                document.title = translations[lang]["meta.title"];
+            }
+            const metaDesc = document.querySelector("meta[name='description']");
+            if (metaDesc && translations[lang]["meta.description"]) {
+                metaDesc.setAttribute("content", translations[lang]["meta.description"]);
+            }
+        }
+
+        // --- Boutons de langue ---
+        document.getElementById("lang-fr").addEventListener("click", () => {
+            setLanguage("fr");
+            updateSeo("fr");
+        });
+
+        document.getElementById("lang-en").addEventListener("click", () => {
+            setLanguage("en");
+            updateSeo("en");
+        });
+
+        // --- Initialisation de la langue par défaut ---
+        const defaultLang = localStorage.getItem("lang") || "fr";
+        setLanguage(defaultLang);
+        updateSeo(defaultLang);
+
+        </script>
+
 
   
 </body>

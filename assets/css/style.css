@@ -215,6 +215,7 @@ html, body {
     height: 100%;
     width: 100%;
     min-height: 700px;
+    max-height: 800px;
 }
 
 .hero .container {
@@ -254,7 +255,7 @@ html, body {
 } 
 
 .hero img {
-    height: 600px;
+    height: 650px;
 }
 
 /* SITEMAIN
@@ -531,7 +532,7 @@ html, body {
     position: fixed;  /* Keep footer always visible */
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 101%;
     background-color: #212121;
     padding: 5px 0;
     text-align: center;
@@ -619,4 +620,24 @@ a.icon-up-bg:hover {color: #212121;}
     padding: 20px;
     border-radius: 14px;
     box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+
+.lang-switcher {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.lang-btn img {
+    height: 1em;       /* Même hauteur que le texte */
+    width: auto;       /* Largeur proportionnelle */
+    vertical-align: middle; /* Aligne le drapeau au milieu du texte */
+    margin-right: 5px; /* Espace entre drapeau et texte */
+}
+
+
+.lang-btn.active {
+    border-bottom: 2px solid #212121;
 }
